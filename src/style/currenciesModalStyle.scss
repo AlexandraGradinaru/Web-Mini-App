@@ -1,0 +1,58 @@
+.currenciesModal {
+  display: none;
+  &.active-modal {
+    @include displayFlex;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    position: absolute;
+    overflow: none;
+  }
+  .modal-background {
+    position: fixed;
+    background: rgb(177, 170, 170);
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+  }
+  .currencies-modal-content {
+    border: 1px solid $border-color;
+    position: relative;
+    background-color: #fff;
+    width: 20rem;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    .currencyModal {
+      cursor: pointer;
+      @include displayFlex($flex-direction: row, $align-items: center);
+      justify-content: flex-start;
+      width: 100%;
+      height: 5rem;
+      background-color: rgb(240, 232, 232);
+      border-bottom: 1px solid $border-color;
+      &.active {
+        background-color: rgb(88, 84, 84);
+      }
+      &.displayed {
+        display: none;
+      }
+      h2 {
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: "Montserrat", sans-serif;
+      }
+      img {
+        margin-left: 1rem;
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
+  .modalBtn {
+    background-color: rgb(175, 75, 18);
+  }
+}
