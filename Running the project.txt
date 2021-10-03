@@ -1,0 +1,4 @@
+To run this project, you will have to copy the link of this repository and paste it in a new folder created on your local environment using the Git Bash Here option, if you have Git installed.
+In the command propmt use : $git clone copied link(link of repository)
+After the project is created, delete the package-lock.json file.
+You can open the project with Visual Studio Code and run the project by using the command 'npm start' in the terminal. 
