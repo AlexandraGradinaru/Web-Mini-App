@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 Before running this project, delete the package-lock.json file from the project.Then, run the 'npm start' command in the terminal.
 
 ## Available Scripts
